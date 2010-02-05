@@ -1,0 +1,19 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+  <script src="simple_test.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript" charset="utf-8">
+    new SimpleTestSuite(function(test){
+
+      test('the truth', function(){
+        return true;
+      });
+
+      console.dir(this.tests);
+    });
+  </script>
+</head>
+<body></body>
+</html>
