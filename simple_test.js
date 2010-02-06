@@ -6,6 +6,7 @@ function SimpleTestSuite(block){
       result = !!block.call(null);
     }catch(e){
       result = false;
+      if (typeof console !== "undefined" && console.error) console.error(e);
       description = e.toString()+' ('+description+')';
     }
     
