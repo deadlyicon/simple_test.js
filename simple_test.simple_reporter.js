@@ -1,6 +1,6 @@
 SimpleTestSuite.prototype.report = function(){
 
-  this.log(this.tests.passed+' out of '+this.tests.failed+' tests passed');
+  this.log(this.tests.passed+' out of '+(this.tests.failed + this.tests.passed)+' tests passed');
   for (var i=0; i < this.tests.length; i++) {
     this.log((this.tests[i][0] ? 'PASS' : 'FAIL')+': '+this.tests[i][1]);
   };
